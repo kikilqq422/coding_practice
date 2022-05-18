@@ -1,0 +1,3 @@
+from selenium import webdriver
+b = webdriver.Firefox()
+b.get("file:///Users/qiqili/Desktop/MySQL%20video/Exercises%20/demo03.html")

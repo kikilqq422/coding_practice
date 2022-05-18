@@ -1,0 +1,84 @@
+{
+  "id": "8517cec3-0138-4397-8172-db93152dcbe3",
+  "version": "2.0",
+  "name": "testing001",
+  "url": "https://www.baidu.com",
+  "tests": [{
+    "id": "e3f11a88-811f-423b-a8da-ccc4e3874c69",
+    "name": "test001",
+    "commands": [{
+      "id": "d3d26304-8144-4f7e-8eaa-cf1166057618",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66212727-3aaa-4dbd-b096-f38825894275",
+      "comment": "",
+      "command": "click",
+      "target": "id=kw",
+      "targets": [
+        ["id=kw", "id"],
+        ["name=wd", "name"],
+        ["css=#kw", "css:finder"],
+        ["xpath=//input[@id='kw']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b07cd9a0-3a1d-48a1-86d8-ce86814473d0",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e24dd10f-3529-48ff-944e-80780c53b716",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "达内教育_百度搜索",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fd5d55c-2898-4574-b165-e79778a579b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=kw",
+      "targets": [
+        ["id=kw", "id"],
+        ["name=wd", "name"],
+        ["css=#kw", "css:finder"],
+        ["xpath=//input[@id='kw']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "达内教育"
+    }, {
+      "id": "2039725f-c0c6-4b9b-9bbf-1edf35f60594",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=kw",
+      "targets": [
+        ["id=kw", "id"],
+        ["name=wd", "name"],
+        ["css=#kw", "css:finder"],
+        ["xpath=//input[@id='kw']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "fb85f22c-33a4-40e1-8d16-9a2b5a3c19c5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3f11a88-811f-423b-a8da-ccc4e3874c69"]
+  }],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}
