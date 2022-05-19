@@ -1,0 +1,38 @@
+* {
+     font-family:"Microsoft Yahei";
+     line-height: 28px;
+}
+
+p {
+     font: 12px, "Microsoft Yahei";
+     text-indent: 2em;
+}
+
+h2 {
+     text-align: center;
+     font-size: 40px;
+}
+
+div {
+     text-align: center;
+     font-size: 6 px;
+     color: grey;
+}
+
+a {
+     text-decoration: none;
+     color: rgb(51, 113, 226);
+}
+
+.footer {
+     font-size: small;
+     color: grey;
+}
+
+.pic {
+     text-align: center;
+}
+
+.btn {
+     font-weight: bold; 
+}

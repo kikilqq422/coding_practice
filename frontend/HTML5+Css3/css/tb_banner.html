@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb_promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background-color: antiquewhite;
+            margin: 100px auto;
+            background: url(../imgs/tb.jpg) no-repeat;
+        }
+
+        /* 代码的清爽性，尽量重用代码 */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, .3);
+            line-height: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .tb_promo .prev {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .tb_promo .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        .tb_promo .promo-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+            background-color: rgba(255, 255, 255, .3);
+            width: 70px;
+            height: 13px;
+            border-radius: 6px;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            /* 圆 */
+            border-radius: 50%;
+            background-color: azure;
+            margin: 3px;
+        }
+
+        .promo-nav .selected {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tb_promo">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt; </span>
+        <ul class="promo-nav">
+            <li class="selected"><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+        </ul>
+
+
+    </div>
+
+</body>
+
+</html>

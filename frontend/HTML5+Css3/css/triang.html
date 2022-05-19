@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .xiaomi {
+            margin: 100px auto;
+            position: relative;
+            height: 264px;
+            width: 517px;
+            background-color: blanchedalmond;
+        }
+
+        span {
+            position: absolute;
+            right: -40px;
+            margin-top: 132px;
+            top: -20px;
+            width: 0px;
+            height: 0px;
+            /* 考虑到兼容性 */
+            line-height: 0;
+            font-size: 0;
+            border: 20px solid transparent;
+            border-left: 20px solid violet;
+        }
+
+
+        .box {
+            margin: 100px auto;
+            width: 0px;
+            height: 0px;
+            /* 考虑到兼容性 */
+            line-height: 0;
+            font-size: 0;
+            border-top: 100px solid red;
+            border-bottom: 100px solid saddlebrown;
+            border-left: 100px solid blue;
+            border-right: 100px solid violet;
+        }
+
+
+        /* 大的直角三角型的妙用 */
+        .tri {
+            margin: 100px auto;
+            width: 0px;
+            height: 0px;
+            /* 考虑到兼容性 */
+            line-height: 0;
+            font-size: 0;
+            border-top: 200px solid transparent;
+            /* border-bottom: 100px solid saddlebrown; */
+            /* border-left: 100px solid blue; */
+            border-right: 100px solid violet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 大盒子 -->
+    <div class="xiaomi">
+        <!-- 三角小盒子 -->
+        <span></span>
+    </div>
+
+    <div class="box">
+
+    </div>
+
+    <div class="tri">
+
+    </div>
+</body>
+
+</html>

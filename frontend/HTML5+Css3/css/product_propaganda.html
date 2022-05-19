@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xiaomi page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(245, 245, 245);
+        }
+
+        div {
+            height: 415px;
+            width: 298px;
+            background-color: white;
+            margin: 100px auto;
+        }
+
+        /* 图片为超大图片，所以为了让其跟背景等宽 */
+        div img {
+            width: 100%;
+        }
+
+        /* 此处的盒子是等宽，等高的，文字会变，但是盒子不变，因此不能设置宽度 */
+        div .description {
+            font: 14px/1.5 "Microsoft Yahei";
+            /* font-weight: normal; */
+            height: 70px;
+
+            /* 将文字和图片的边缘进行隔开，也可以用padding，但是padding要计算盒子大小，比较麻烦 */
+            margin-top: 30px;
+        }
+
+        div p {
+            /* 仅设置左右的margin */
+            padding: 0 28px;
+        }
+
+        div .comment {
+            color: rgb(186, 185, 185);
+            font-size: 12px;
+            margin: 20px 0 10px 0;
+
+        }
+
+        div .pro {
+            font-size: 14px;
+        }
+
+        div em {
+            /* 取消掉斜体 */
+            font-style: normal;
+            font-weight: 800;
+            color: rgb(186, 185, 185);
+            /* 设置|旁边的距离，margin/padding均可 */
+            padding: 0 2px 0 3px;
+        }
+
+        div .pro span {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="img.jpg" />
+
+        <p class="description">快递牛，整体不错蓝牙可以说秒连。红米给力</p>
+        <p class="comment">来自于 117384232 的评价</p>
+        <p class="pro">Redmi AirDots真无线蓝...
+            <em> | </em>
+            <span>99.9 元</span>
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorful links</title>
+    <style>
+        a {
+            background-color: aquamarine;
+            width: 120px;
+            height: 58px;
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(251, 251, 251);
+            line-height: 48px;
+            display: inline-block;
+        }
+
+        /* 要点：每个导航栏都需要不同的背景图片：所以需要设置。class */
+        .bg1 {
+            background: url(../images/bg1.png) no-repeat;
+        }
+
+        /* 注意调用hover的方式！！！相当于第一个背景在点击的时候用另外一张图片显示 */
+        .bg1:hover {
+            background-image: url(../images/bg2.png);
+        }
+
+        .bg2 {
+            background: url(../images/bg3.jpg) no-repeat;
+        }
+
+        .bg2:hover {
+            background-image: url(../images/bg5.png);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="bg1">五彩导航</a>
+    <a href="#" class="bg2">五彩导航</a>
+    <a href="">五彩导航</a>
+    <a href="">五彩导航</a>
+    <a href="">五彩导航</a>
+
+
+
+
+</body>
+
+</html>

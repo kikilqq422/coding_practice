@@ -1,0 +1,295 @@
+/* 声明font icone ulr source */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* center background */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+    color: #666666;
+}
+
+.shortcut .fl {
+    float: left;
+}
+
+.shortcut .fr {
+    float: right;
+}
+
+/* all the li box */
+.shortcut ul li {
+    float: left;
+}
+
+/* "|" li box  */
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    margin: 9px 15px 0;
+    background-color: #666666;
+}
+
+/* right > iconfont */
+.shortcut .iconright::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+    margin-left: 6px;
+}
+
+/* header section */
+.header {
+    position: relative;
+    /* include margin-top and margin-bottom */
+    height: 106px;
+}
+
+.header h1 {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    font-size: 0;
+}
+
+.logo a {
+    /* absolute has no height and width  */
+    display: block;
+    background: url(../images/logo.png) no-repeat;
+    /* width, height should be given */
+    width: 175px;
+    height: 56px;
+}
+
+header .search {
+    position: absolute;
+    top: 25px;
+    left: 347px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #af191b;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-indent: 2em;
+}
+
+.search button {
+    float: right;
+    width: 80px;
+    height: 32px;
+    background-color: #c81623;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* hotword */
+header .hotwords {
+    position: absolute;
+    top: calc(25px + 34px);
+    left: 347px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+header .hotwords a {
+    margin: 0 5px;
+}
+
+
+header .shoppingcart {
+    position: absolute;
+    right: 67px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+}
+
+header .shoppingcart::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    color: #b2191b;
+    /* margin between fonticone and text */
+    margin-right: 7px;
+}
+
+header .shoppingcart::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    color: a4a4a4;
+    /* margin between fonticone and text */
+    margin-left: 15px;
+}
+
+/* bubble on the top */
+header .shoppingcart .bubble {
+    /* 子觉父绝 */
+    position: absolute;
+    top: -5px;
+    /* !!!should be left,当数量增大的时候，不会往左边走 */
+    left: 105px;
+    /* update the line-height in .shoppingcar; */
+    line-height: 14px;
+    /* 8数字可能会变化，所以不给width，给height */
+    height: 14px;
+    border-radius: 7px 7px 7px 0;
+    /* 字体左右空间，撑大圆形 */
+    padding: 0 3px;
+    color: #fff;
+    background-color: #e60012;
+}
+
+/* navigation sector */
+.nav {
+    height: 48px;
+    border-bottom: 2px solid #b1181a;
+    /* make the text in center */
+    font-size: 16px;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 208px;
+    height: 46px;
+}
+
+.dropdown .dt {
+    height: 100%;
+    width: 100%;
+    line-height: 46px;
+    text-align: center;
+    background-color: #b1191a;
+    color: #fff;
+}
+
+.dropdown .dd {
+    display: none;
+    width: 208px;
+    height: 462px;
+    margin-top: 2px;
+    background-color: #c81623;
+}
+
+.dropdown .dd li {
+    position: relative;
+    height: 31px;
+    width: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-left: 2px;
+    /* text overflow control */
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* hover the li background turn white */
+.dropdown .dd ul li:hover {
+    background: #fff;
+}
+
+/* a trun red */
+.dropdown .dd ul li a:hover {
+    color: #c81623;
+}
+
+
+
+/* make < on the right by using position:absolute */
+.dropdown .dd li::after {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    content: '\e920';
+    font-family: 'icomoon';
+    color: #fff;
+}
+
+
+/* nav bar on the left */
+.nav .selelctions li {
+    float: left;
+    line-height: 46px;
+    text-align: center;
+}
+
+/* !!!padding was given to a, because the li box's size is determined by a */
+.nav .selelctions li a {
+    padding: 0 10px;
+}
+
+/* footer section */
+footer {
+    height: 418px;
+    background-color: #f5f5f5;
+}
+
+footer .service {
+    height: 110px;
+}
+
+footer .service li {
+    float: left;
+    /* 平均分成5个li盒子 the center part are equally divided into 5 li boxes */
+    width: calc(1200px / 5);
+    height: 78px;
+    margin-top: 30px;
+    padding-left: 37px;
+}
+
+footer .service li h2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/138.png);
+    margin-right: 7px;
+}
+
+footer .service li .words {
+    color: #333333;
+}
+
+footer .service li .words h4 {
+    font-size: 12px;
+}
+
+footer .service li .words p {
+    font-size: 12px;
+}
+
+footer .support {
+    height: 190px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}

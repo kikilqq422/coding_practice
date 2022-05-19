@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qq.mapper.userMapper">
+    <!--如果加了这个表示开启缓存-->
+    <!--<cache/>-->
+    <!--也可以对固定的语句开缓存，useCache="true"-->
+    <select id="users" resultType="User" useCache="false">
+        select * from mybatis.user;
+    </select>
+
+    <select id="selectById" resultType="User" parameterType="int">
+        select * from mybatis.user where id=#{id};
+    </select>
+
+    <update id="updateUser" parameterType="User">
+        UPDATE mybatis.user set id=#{id},name=#{name},pwd=#{pwd} where id=#{id};
+    </update>
+
+    <insert id="addUser" parameterType="User">
+        insert into mybatis.user values (#{id},#{name},#{pwd});
+    </insert>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from mybatis.user where id=#{id};
+    </delete>
+
+</mapper>
